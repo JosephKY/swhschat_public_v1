@@ -1,0 +1,18 @@
+#<FilesMatch "(?<!error\.php)$">
+#    AuthType Basic
+#    AuthName "Please enter your Pulaski Schools email and your password. This is not a secure connection, so do not enter any personal passwords."
+#    AuthUserFile "..\htdocs\.htpasswd"
+#    require valid-user
+#</FilesMatch>
+
+ErrorDocument 401 "/error.php?e=401"
+ErrorDocument 403 "/error.php?e=403"
+ErrorDocument 404 "/error.php?e=404"
+ErrorDocument 500 "/error.php?e=500"
+
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteRule ^([^\.]+)$ $1.php [NC,L]
+RewriteRule ^([^\.]+)$ $1.html [NC,L]
+RewriteRule ^([^\.]+)$ $1.htm [NC,L]
+

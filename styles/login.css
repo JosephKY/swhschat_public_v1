@@ -1,0 +1,10 @@
+input[type=text]{
+    margin-bottom: .5em;
+}
+
+.error {
+    font-weight:bolder;
+    color: rgb(202, 13, 13);
+    user-select: none;
+    opacity: 0;
+}

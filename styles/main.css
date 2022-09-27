@@ -1,0 +1,135 @@
+* {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    padding-left: 20%;
+    padding-right: 20%;
+    min-height: 100% !important;
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(211,211,211,1) 70%);
+}
+
+@media only screen and (max-aspect-ratio: 1/1) {
+    body {
+      padding: 0;
+    }
+  }
+
+#header {
+    width: 100%;
+    background-color: rgb(226, 226, 226);
+    padding: .6em .5em;
+    min-height: 29px;
+    box-sizing: border-box;
+    user-select: none;
+}
+
+br {
+    margin-bottom: 20px;
+}
+
+.headerButton {
+    color: #222;
+    border-radius: 3px;
+    border: 1px solid #EEE;
+    background: rgb(211, 210, 210);
+    padding: .3em .8em;
+    text-decoration: none;
+    border-style: ridge;
+    margin-right: .5em;
+    transition: .1s;
+}
+
+.headerButton:hover {
+    filter: brightness(1.05);
+    cursor: pointer;
+}
+
+.headerButton:hover .headerButtonContent {
+    text-decoration: underline;
+}
+
+.headerButton:active {
+    filter: brightness(0.9);
+}
+
+.headerButtonIcon {
+    padding-right: .5em;
+    vertical-align:middle;
+}
+
+.headerButtonContent {
+    vertical-align: middle;
+    font-size: 1.2em;
+    font-weight: normal;
+}
+
+#logoContainer {
+    margin-bottom: .5em;
+    user-select: none;
+}
+
+#logoImage {
+    max-height: 64px;
+    width: auto;
+    vertical-align: middle;
+    margin-right: .5em;
+}
+
+#logoText {
+    font-size: 2.5em;
+    font-weight: bolder;
+    vertical-align: middle;
+}
+
+.g-recaptcha {
+    margin: .5em 0;
+}
+
+#recentSignups {
+    width: fit-content;
+    border: 1px solid rgb(146, 146, 146);
+    border-style: ridge;
+    padding: 1em;
+    padding-top: 0;
+}
+
+#recentSignupsUsers {
+    padding: 1em;
+    border-radius: 3px;
+    border: 1px solid #EEE;
+    background: rgb(211, 210, 210);
+    border-style: ridge;
+    width: fit-content;
+    padding-right: 3em;
+}
+
+.recentUserPicture {
+    height: 4em;
+    width: auto;
+    margin-right: .5em;
+    border: 1px solid rgb(73, 73, 73);
+    border-style: ridge;
+}
+
+.recentUserContainer {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    margin: .5em 0;
+}
+
+.recentUserName {
+    margin-bottom: 0;
+}
+
+.recentUserTime {
+    margin-top: 0;
+}

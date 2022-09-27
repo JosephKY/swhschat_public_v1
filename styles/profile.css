@@ -1,0 +1,10 @@
+#profileDetailsContainer {
+    margin: 0 auto;
+    display: flex;
+}
+
+#profilePicture {
+    margin: 1em;
+    height: 13em;
+    width: auto;
+}
